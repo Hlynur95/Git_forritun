@@ -18,17 +18,14 @@ while svar == "ja": #while likkja yfir öll dæmin
             summa1 = summa1 + tala # leggja saman stafina
             summa2 = summa2 * tala # margfalda stafina saman
 
-        print("saman lagt",summa1) 
+        print("saman lagt",summa1)
         print("margfaldað",summa2)
 
 
     if val == 2:
-        fornarn = input("sláðu in fornarn: ")
-        eftirnafn = input("sláðu in eftirnarn: ")
-        print("Hállo",fornarn,eftirnafn)
-
-
-
+        fornarn = input("sláðu in fornarn: ") #slá in nafn
+        eftirnafn = input("sláðu in eftirnarn: ") #slá in eftir nafni
+        print("Hállo",fornarn,eftirnafn) #printa út nöfnin saman og seygja hallo
 
 
     if val == 3:
@@ -46,9 +43,6 @@ while svar == "ja": #while likkja yfir öll dæmin
                 litilstafur = litilstafur + 1
 
         print("það eru",storstafur,"storir stafir",litilstafur,"litlir stafir og",eftirstafur,"lágstafir a eftir hástafi")
-
-
-
 
     if val == 4:
         break
