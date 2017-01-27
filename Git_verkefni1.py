@@ -22,11 +22,10 @@ while svar == "ja":
         print("margfaldað",summa2)
 
 
-
-
-
-
-    #if val == 2:
+    if val == 2:
+        fornarn = input("sláðu in fornarn: ")
+        eftirnafn = input("sláðu in eftirnarn: ")
+        print("Hállo",fornarn,eftirnafn)
 
 
 
