@@ -31,12 +31,27 @@ while svar == "ja":
 
 
 
-    #if val == 3:
+    if val == 3:
+        texti = input("sláðu inn texta: ")
+        storstafur = 0
+        litilstafur = 0
+        eftirstafur = 0
+
+        for x in range(len(texti)):
+            if texti [x].isalpha() and texti[x].isupper():
+                storstafur = storstafur + 1
+                if (texti[x+1].islower()):
+                    eftirstafur = eftirstafur + 1
+            if (texti[x].isalpha() and texti[x].islower()):
+                litilstafur = litilstafur + 1
+
+        print("það eru",storstafur,"storir stafir",litilstafur,"litlir stafir og",eftirstafur,"lágstafir a eftir hástafi")
 
 
 
 
     #if val == 4:
+
 
 
 
