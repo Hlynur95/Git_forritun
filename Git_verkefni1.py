@@ -29,22 +29,23 @@ while svar == "ja": #while likkja yfir öll dæmin
 
 
     if val == 3:
-        texti = input("sláðu inn texta: ")
+        texti = input("sláðu inn texta: ") #slá in texta
         storstafur = 0
         litilstafur = 0
         eftirstafur = 0
 
-        for x in range(len(texti)):
-            if texti [x].isalpha() and texti[x].isupper():
-                storstafur = storstafur + 1
-                if texti[x+1].islower():
-                    eftirstafur = eftirstafur + 1
-            if texti[x].isalpha() and texti[x].islower():
+        for x in range(len(texti)): #fer yfir texti ein staf í einu
+            if texti [x].isalpha() and texti[x].isupper(): # ef stafur [X] er i (texti) og er alpa og upper þá plusar hann við 1
+                storstafur = storstafur + 1 #plús ein fyrir hvern upper staff
+                if x!= len(texti)-1: #ef X er ekki komið á loka staf i (texti) þá heldur hann afram
+                    if texti[x+1].islower(): #ef stafur er lower a eftir (x) sem er stor þá plúsar ein við
+                        eftirstafur = eftirstafur + 1 #plúsar ein við
+            if texti[x].isalpha() and texti[x].islower(): #ef orð í texti er alpha og lower þá plús ein
                 litilstafur = litilstafur + 1
 
         print("það eru",storstafur,"storir stafir",litilstafur,"litlir stafir og",eftirstafur,"lágstafir a eftir hástafi")
 
-    if val == 4:
+    if val == 4: #hætta
         break
 
 
