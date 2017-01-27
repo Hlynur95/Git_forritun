@@ -50,7 +50,8 @@ while svar == "ja":
 
 
 
-    #if val == 4:
+    if val == 4:
+        break
 
 
 
